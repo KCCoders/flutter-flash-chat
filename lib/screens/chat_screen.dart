@@ -139,7 +139,7 @@ class MessagesStream extends StatelessWidget {
           final text = message.get('text');
           final sender = message.get('sender');
 
-          bool isMe = (sender == _loggedInUser.email) ? true : false;
+          bool isMe = (sender == _loggedInUser.email);
 
           final messageBubble = MessageBubble(
             sender: sender,
